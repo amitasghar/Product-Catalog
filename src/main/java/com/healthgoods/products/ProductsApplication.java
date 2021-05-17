@@ -22,9 +22,5 @@ public class ProductsApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		logger.info("All products -> {}", dao.findAll());
-		logger.info("product 1 -> {}", dao.findByProduct(1));
-		logger.info("kitchen products - " + dao.findByCategory("kitchen"));
-		logger.info("cup products - " + dao.findByCategory("Cup"));
 	}
 }
